@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guia ON-LINE - Selo AGRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu-navegacao">
+        <ul>
+            <li class="menu-principal">
+                <a href="#">Menu do Site</a>
+                <ul class="cascata">
+                    <li><a href="#" onclick="mudarSecao('inicial')">Página Inicial</a></li>
+                    <li><a href="#" onclick="mudarSecao('missao')">Nossa Missão</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <center>
+        <h1>Guia ON-LINE dos produtos com o selo de produção sustentável.</h1>
+        <p>"AGRO forte, futuro sustentável: equilíbrio entre a produção e o Meio Ambiente". Apoie o Agro e o Brasil!</p>
+    </center>
+
+    <div id="secaoInicial" class="conteudo-secao">
+        <center>
+            <h3>Rótulo: Conheça o tipo de certificação do seu produto</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+            
+            <br><br>
+            <div class="area-busca">
+                <label>Pesquisar por nome do Selo ou Produto:</label>
+                <input type="text" id="inputBusca" placeholder="Ex: café, açúcar, cacau...">
+                <button onclick="buscar()">OK</button>
+            </div>
+        </center>
+        
+        <h2 style="margin-top: 30px;">Selos Cadastrados</h2>
+        <div id="listaSelos"></div> 
+    </div>
+
+    <div id="secaoMissao" class="conteudo-secao" style="display: none;">
+        <h2>Nossa Missão</h2>
+        <p>A nossa missão é disseminar o conhecimento sobre as principais certificações ecológicas e sociais, valorizando os produtores que protegem o meio ambiente e garantem o futuro do nosso país.</p>
+        <p>Ao conhecer as certificações o consumidor fortalece o crescimento do Agronegócio brasileiro.</p>
+        
+        <p style="text-align: center; font-weight: bold; color: #117c03; margin-top: 16px;">Você sabia?</p>
+        
+        <p><strong>"Os produtos certificados agregam valor além de estarem de acordo com as exigentes regras do mercado externo".</strong></p>
+        <p>Os certificados geram benefícios para o produtor rural brasileiro. Os produtos são comercializados com os melhores preços, portas são abertas no cenário do comércio externo e o agricultor possui acesso facilitado à empréstimos rurais.</p>
+        <p><strong>"Os selos transformam a 'comodity' em um product rastreável".</strong></p> 
+    </div>
+
+    <div id="rodape">
+        <p>Desenvolvido por: Alunos do 1ºA - Colégio Teothonio B. Vilela - IBIPORÃ-PR</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

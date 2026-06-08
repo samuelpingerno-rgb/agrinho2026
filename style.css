@@ -1,0 +1,159 @@
+body {
+    background-color: #caf3ca; 
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- ESTILO DO MENU EM CASCATA NO LADO ESQUERDO --- */
+.menu-navegacao {
+    background-color: rgb(1, 41, 11);
+    padding: 10px 20px;
+    text-align: left; /* 1. Alinha o botão do menu para a esquerda */
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.menu-principal {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.menu-navegacao a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Oculta a cascata por padrão e ajusta para alinhar à esquerda */
+.menu-navegacao ul li ul.cascata {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    left: 0; /* 2. Alinha o início da caixinha com o início do botão */
+    transform: none; /* 3. Remove a centralização antiga */
+    padding: 0;
+}
+
+.cascata li {
+    display: block;
+    width: 100%;
+}
+
+.cascata li a {
+    background-color: green;
+    color: white;
+    padding: 12px 16px;
+}
+
+/* Exibe a cascata quando passa o rato (mouse) */
+.menu-principal:hover ul.cascata {
+    display: block !important;
+}
+
+.cascata a:hover {
+    background-color: #117c03 !important;
+}
+
+/* --- ESTILO DOS TÍTULOS E CONTEÚDO --- */
+h1 {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.conteudo-secao {
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #999;
+}
+
+.conteudo-secao h2 {
+    color: green;
+    margin-bottom: 15px;
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+}
+
+/* --- ÁREA DE BUSCA --- */
+.area-busca {
+    background-color: #f0fbf0;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px dashed green;
+    margin-top: 15px;
+}
+
+.area-busca input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid green;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.area-busca button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.area-busca button:hover {
+    background-color: rgb(1, 41, 11);
+}
+
+/* --- CARTÕES DOS SELOS (CARDS) --- */
+#listaSelos {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 15px;
+    width: 230px;
+    display: inline-block; 
+    vertical-align: top;   
+    text-align: center;    
+    border-radius: 6px;    
+}
+
+.card img {
+    width: 120px;         
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* --- RODAPÉ --- */
+#rodape {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
